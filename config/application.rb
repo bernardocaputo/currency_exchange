@@ -2,6 +2,8 @@ require_relative 'boot'
 
 require 'rails/all'
 
+require './lib/exchange' # application não carrega automaticamente o lib, por isso o comando
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
