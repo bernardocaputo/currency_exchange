@@ -9,11 +9,11 @@ services:
   website:
     depends_on:
       - 'postgres'
-    build: .
+    build: . # significa dockerfile
     ports:
       - '3000:3000'
     volumes:
-      - '.:/usr/src/app'
+      - '.:/usr/src/app' #conecta essa pasta com a pasta dentro do containers criados pelo docker
 
 volumes:
   postgres:
