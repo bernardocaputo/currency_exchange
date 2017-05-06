@@ -1,6 +1,7 @@
 .exchange_box{
     .card{
       border: 0;
+      opacity: 0.9;
       .card-header{
         background-color: #878d99;
         border-radius: 0;
@@ -9,9 +10,11 @@
       }
       .card-block{
         padding-top: 10px;
+        background-color: white;
         .title{
           color: #878d99;
           font-weight: 700;
+
         }
         .btn-exchange{
           background-color: #5bc0de;
