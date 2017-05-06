@@ -1,7 +1,7 @@
 $(document).ready ->
-  $('form').submit ->
-    if $('form').attr('action') == '/exchange'
-      $.ajax '/exchange',
+  $('form').bind 'keyup change', ->
+      $.ajax
+          url: '/exchange',
           type: 'POST'
           dataType: 'json'
           data: {
@@ -22,8 +22,7 @@ $(document).ready ->
     aux = currency.val()
     currency.val currency_destination.val()
     currency_destination.val aux
-    console.log aux
-    $('form').submit()
+    $('form').keyup()
     return
   return
 
